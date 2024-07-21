@@ -1,0 +1,49 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.suo
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Environment variable files
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# PyCharm specific
+*.iml
+*.idea/
+
+# macOS specific
+*.DS_Store
+
+# Windows specific
+*.log
+*.pid
+*.pid.lock
+
+# Flask
+instance/
+.env
+*.pyo
+*.pyd

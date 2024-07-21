@@ -1,0 +1,177 @@
+[{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f6e"
+  },
+  "id": "19",
+  "name": "Australia and New Zealand",
+  "region_id": "5",
+  "wikiDataId": "Q45256"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f6f"
+  },
+  "id": "7",
+  "name": "Caribbean",
+  "region_id": "2",
+  "wikiDataId": "Q664609"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f70"
+  },
+  "id": "9",
+  "name": "Central America",
+  "region_id": "2",
+  "wikiDataId": "Q27611"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f71"
+  },
+  "id": "10",
+  "name": "Central Asia",
+  "region_id": "3",
+  "wikiDataId": "Q27275"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f72"
+  },
+  "id": "4",
+  "name": "Eastern Africa",
+  "region_id": "1",
+  "wikiDataId": "Q27407"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f73"
+  },
+  "id": "12",
+  "name": "Eastern Asia",
+  "region_id": "3",
+  "wikiDataId": "Q27231"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f74"
+  },
+  "id": "15",
+  "name": "Eastern Europe",
+  "region_id": "4",
+  "wikiDataId": "Q27468"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f75"
+  },
+  "id": "20",
+  "name": "Melanesia",
+  "region_id": "5",
+  "wikiDataId": "Q37394"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f76"
+  },
+  "id": "21",
+  "name": "Micronesia",
+  "region_id": "5",
+  "wikiDataId": "Q3359409"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f77"
+  },
+  "id": "2",
+  "name": "Middle Africa",
+  "region_id": "1",
+  "wikiDataId": "Q27433"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f78"
+  },
+  "id": "1",
+  "name": "Northern Africa",
+  "region_id": "1",
+  "wikiDataId": "Q27381"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f79"
+  },
+  "id": "6",
+  "name": "Northern America",
+  "region_id": "2",
+  "wikiDataId": "Q2017699"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f7a"
+  },
+  "id": "18",
+  "name": "Northern Europe",
+  "region_id": "4",
+  "wikiDataId": "Q27479"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f7b"
+  },
+  "id": "22",
+  "name": "Polynesia",
+  "region_id": "5",
+  "wikiDataId": "Q35942"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f7c"
+  },
+  "id": "8",
+  "name": "South America",
+  "region_id": "2",
+  "wikiDataId": "Q18"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f7d"
+  },
+  "id": "13",
+  "name": "South-Eastern Asia",
+  "region_id": "3",
+  "wikiDataId": "Q11708"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f7e"
+  },
+  "id": "5",
+  "name": "Southern Africa",
+  "region_id": "1",
+  "wikiDataId": "Q27394"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f7f"
+  },
+  "id": "14",
+  "name": "Southern Asia",
+  "region_id": "3",
+  "wikiDataId": "Q771405"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f80"
+  },
+  "id": "16",
+  "name": "Southern Europe",
+  "region_id": "4",
+  "wikiDataId": "Q27449"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f81"
+  },
+  "id": "3",
+  "name": "Western Africa",
+  "region_id": "1",
+  "wikiDataId": "Q4412"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f82"
+  },
+  "id": "11",
+  "name": "Western Asia",
+  "region_id": "3",
+  "wikiDataId": "Q27293"
+},{
+  "_id": {
+    "$oid": "669ce5cc3c6eb5ec13742f83"
+  },
+  "id": "17",
+  "name": "Western Europe",
+  "region_id": "4",
+  "wikiDataId": "Q27496"
+}]
