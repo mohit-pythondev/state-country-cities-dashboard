@@ -1,0 +1,7 @@
+<h2 class="mt-4">Subregions</h2>
+<select class="form-control mt-2" id="subregionSelect">
+  <option value="">Select a Subregion</option>
+  {% for subregion in subregions %}
+    <option value="{{ subregion['id'] }}">{{ subregion['name'] }}</option>
+  {% endfor %}
+</select>

@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "669ce5ab3c6eb5ec13742f67"
+  },
+  "id": "1",
+  "name": "Africa",
+  "wikiDataId": "Q15"
+},{
+  "_id": {
+    "$oid": "669ce5ab3c6eb5ec13742f68"
+  },
+  "id": "2",
+  "name": "Americas",
+  "wikiDataId": "Q828"
+},{
+  "_id": {
+    "$oid": "669ce5ab3c6eb5ec13742f69"
+  },
+  "id": "3",
+  "name": "Asia",
+  "wikiDataId": "Q48"
+},{
+  "_id": {
+    "$oid": "669ce5ab3c6eb5ec13742f6a"
+  },
+  "id": "4",
+  "name": "Europe",
+  "wikiDataId": "Q46"
+},{
+  "_id": {
+    "$oid": "669ce5ab3c6eb5ec13742f6b"
+  },
+  "id": "5",
+  "name": "Oceania",
+  "wikiDataId": "Q55643"
+},{
+  "_id": {
+    "$oid": "669ce5ab3c6eb5ec13742f6c"
+  },
+  "id": "6",
+  "name": "Polar",
+  "wikiDataId": "Q51"
+}]

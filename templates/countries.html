@@ -1,0 +1,7 @@
+<h2 class="mt-4">Countries</h2>
+<select class="form-control mt-2" id="countrySelect">
+  <option value="">Select a Country</option>
+  {% for country in countries %}
+    <option value="{{ country['id'] }}">{{ country['name'] }}</option>
+  {% endfor %}
+</select>

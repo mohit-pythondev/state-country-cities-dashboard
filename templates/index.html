@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regions</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="mb-4">Regions</h1>
+    <div class="form-group">
+      <label for="regionSelect">Region</label>
+      <select id="regionSelect" class="form-control">
+        <option value="">Select a Region</option>
+        {% for region in regions %}
+          <option value="{{ region['id'] }}">{{ region['name'] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div id="subregions"></div>
+    <div id="countries"></div>
+    <div id="states"></div>
+    <div id="cities"></div>
+  </div>
+
+  <script>
+    document.getElementById('regionSelect').addEventListener('change', function() {
+      const regionId = this.value;
+      const subregionsContainer = document.getElementById('subregions');
+      const countriesContainer = document.getElementById('countries');
+      const statesContainer = document.getElementById('states');
+      const citiesContainer = document.getElementById('cities');
+      if (regionId) {
+        fetch(`/subregions/${regionId}`)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(data => {
+            subregionsContainer.innerHTML = data;
+            countriesContainer.innerHTML = '';  // Clear previous countries
+            statesContainer.innerHTML = '';     // Clear previous states
+            citiesContainer.innerHTML = '';     // Clear previous cities
+          })
+          .catch(error => {
+            console.error('Error fetching subregions:', error);
+          });
+      } else {
+        subregionsContainer.innerHTML = '';
+        countriesContainer.innerHTML = '';
+        statesContainer.innerHTML = '';
+        citiesContainer.innerHTML = '';
+      }
+    });
+  
+    document.addEventListener('change', function(event) {
+      if (event.target.id === 'subregionSelect') {
+        const subregionId = event.target.value;
+        const countriesContainer = document.getElementById('countries');
+        const statesContainer = document.getElementById('states');
+        const citiesContainer = document.getElementById('cities');
+        if (subregionId) {
+          fetch(`/countries/${subregionId}`)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.text();
+            })
+            .then(data => {
+              countriesContainer.innerHTML = data;
+              statesContainer.innerHTML = '';  // Clear previous states
+              citiesContainer.innerHTML = '';  // Clear previous cities
+            })
+            .catch(error => {
+              console.error('Error fetching countries:', error);
+            });
+        } else {
+          countriesContainer.innerHTML = '';
+          statesContainer.innerHTML = '';
+          citiesContainer.innerHTML = '';
+        }
+      }
+  
+      if (event.target.id === 'countrySelect') {
+        const countryId = event.target.value;
+        const statesContainer = document.getElementById('states');
+        const citiesContainer = document.getElementById('cities');
+        if (countryId) {
+          fetch(`/states/${countryId}`)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.text();
+            })
+            .then(data => {
+              statesContainer.innerHTML = data;
+              citiesContainer.innerHTML = '';  // Clear previous cities
+            })
+            .catch(error => {
+              console.error('Error fetching states:', error);
+            });
+        } else {
+          statesContainer.innerHTML = '';
+          citiesContainer.innerHTML = '';
+        }
+      }
+  
+      if (event.target.id === 'stateSelect') {
+        const stateId = event.target.value;
+        const citiesContainer = document.getElementById('cities');
+        if (stateId) {
+          fetch(`/cities/${stateId}`)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.text();
+            })
+            .then(data => {
+              citiesContainer.innerHTML = data;
+            })
+            .catch(error => {
+              console.error('Error fetching cities:', error);
+            });
+        } else {
+          citiesContainer.innerHTML = '';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
